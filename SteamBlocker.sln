@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steam Blocker", "SteamBlocker\Steam Blocker.csproj", "{46DF1617-652D-42AB-8D45-B29ACB2ED188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46DF1617-652D-42AB-8D45-B29ACB2ED188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DF1617-652D-42AB-8D45-B29ACB2ED188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DF1617-652D-42AB-8D45-B29ACB2ED188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DF1617-652D-42AB-8D45-B29ACB2ED188}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B5DB8EB-82F4-4C0C-BB4E-EB794CFDCBE1}
+	EndGlobalSection
+EndGlobal
