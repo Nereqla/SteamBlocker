@@ -16,7 +16,7 @@ public partial class MainForm : Form
 
     private void ChangeControlsStatus()
     {
-        if (CheckRuleExistOrEnabled())
+        if (CheckRuleIsExistAndEnabled())
         {
             this.pnl_statusColor.BackColor = Color.Red;
             this.lbl_status.Text = "Steam Erişime Kapalı!";
@@ -39,20 +39,21 @@ public partial class MainForm : Form
         }
     }
 
-    private bool CheckRuleExistOrEnabled()
+    public bool CheckRuleIsExistAndEnabled()
     {
-        Type tNetFwPolicy2 = Type.GetTypeFromProgID("HNetCfg.FwPolicy2");
-        INetFwPolicy2 fwPolicy = (INetFwPolicy2)Activator.CreateInstance(tNetFwPolicy2);
-
-        foreach (INetFwRule rule in fwPolicy.Rules)
+        try
         {
-            if (rule.Name == _ruleName && rule.Enabled == true)
-            {
-                return true;
-            }
-            else return false;
+            Type tNetFwPolicy2 = Type.GetTypeFromProgID("HNetCfg.FwPolicy2");
+            INetFwPolicy2 fwPolicy = (INetFwPolicy2)Activator.CreateInstance(tNetFwPolicy2);
+
+            IEnumerable<INetFwRule> rules = fwPolicy.Rules.Cast<INetFwRule>();
+            return rules.Any(rule => rule.Name == _ruleName && rule.Enabled == true);
         }
-        return false;
+        catch (Exception ex)
+        {
+            MessageBox.Show($"HATA OLUŞTU:\n{ex.ToString()}", "Kritik Hata");
+            return false;
+        }
     }
 
     private void ChangeRuleToOpposite()
