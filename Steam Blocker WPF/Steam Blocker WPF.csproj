@@ -12,17 +12,16 @@
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-      <PublishTrimmed>false</PublishTrimmed>
-
-      <IsAotCompatible>true</IsAotCompatible>
-    <PublishAot>true</PublishAot>
-
-
+    <ApplicationIcon>no-internet.ico</ApplicationIcon>
 
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="no-internet.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="no-internet.ico" />
   </ItemGroup>
 
   <ItemGroup>
