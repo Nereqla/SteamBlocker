@@ -1,6 +1,11 @@
 # SteamBlocker
 
-Bu basit Windows Forms uygulaması, tek bir tıklamayla Steam istemcisinin internet erişimini engellemenize veya yeniden etkinleştirmenize olanak tanır. Bu, özellikle oyun oynarken dikkatinizin dağılmasını önlemek veya bant genişliğinizi diğer uygulamalar için serbest bırakmak istediğiniz durumlar için faydalı olabilir.
+Bu basit Windows uygulaması, tek bir tıklamayla Steam istemcisinin internet erişimini engellemenize veya yeniden etkinleştirmenize olanak tanır. Bu, özellikle oyun oynarken dikkatinizin dağılmasını önlemek veya bant genişliğinizi diğer uygulamalar için serbest bırakmak istediğiniz durumlar için faydalı olabilir.
+
+<img width="250" height="205" alt="image" src="https://github.com/user-attachments/assets/ed502413-bfe5-4681-9d9f-37744ffed455" />
+<img width="245" height="203" alt="image" src="https://github.com/user-attachments/assets/3030ddd8-d3eb-44b9-8cdb-4af5065c6255" />
+
+
 
 ## Nasıl Çalışır?
 
