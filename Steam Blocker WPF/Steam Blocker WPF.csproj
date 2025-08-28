@@ -31,7 +31,7 @@
 
   <ItemGroup>
     <Reference Include="Interop.NetFwTypeLib">
-      <HintPath>..\SteamBlocker\obj\Debug\net8.0-windows\Interop.NetFwTypeLib.dll</HintPath>
+      <HintPath>..\Steam Blocker Form\obj\Debug\net8.0-windows\Interop.NetFwTypeLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 

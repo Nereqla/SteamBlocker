@@ -1,5 +1,4 @@
 ﻿using NetFwTypeLib;
-using System.Collections;
 using System.Data;
 using System.Windows;
 
